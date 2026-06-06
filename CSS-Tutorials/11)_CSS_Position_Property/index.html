@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Property</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      color: #2c3e50;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 0.5rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #34495e;
+      margin-bottom: 0.5rem;
+    }
+
+    .demo-box {
+      width: 200px;
+      height: 100px;
+      margin: 1rem;
+      padding: 1rem;
+      border: 2px solid black;
+      background-color: #f0f8ff;
+    }
+
+    /* Position Examples */
+    .static-box {
+      position: static; /* default */
+      background-color: #a2d2ff;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 20px;
+      background-color: #bde0fe;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      background-color: #ffafcc;
+    }
+
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background-color: #cdb4db;
+    }
+
+    .fixed-box {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: #ffc8dd;
+    }
+
+    .parent {
+      position: relative; /* establishes containing block for absolute children */
+      border: 3px dashed #333;
+      padding: 2rem;
+      margin-top: 2rem;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Position Property</h1>
+    <p>Understanding static, relative, absolute, sticky, and fixed positioning</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Static (default)</h2>
+      <p>Elements are positioned according to the normal document flow. <code>top</code>, <code>left</code>, etc. have no effect.</p>
+      <div class="demo-box static-box">Static Box</div>
+    </section>
+
+    <section>
+      <h2>2. Relative</h2>
+      <p>Positioned relative to its normal position. Space is still reserved in the layout.</p>
+      <div class="demo-box relative-box">Relative Box (moved 20px)</div>
+    </section>
+
+    <section>
+      <h2>3. Absolute</h2>
+      <p>Positioned relative to the nearest positioned ancestor (not static). Removed from normal flow.</p>
+      <div class="parent">
+        Parent (relative)
+        <div class="demo-box absolute-box">Absolute Box</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>4. Sticky</h2>
+      <p>Behaves like relative until a scroll threshold is reached, then sticks to the defined edge.</p>
+      <div class="demo-box sticky-box">Sticky Box (sticks to top)</div>
+      <p>Scroll down to see sticky behavior.</p>
+      <p style="height:200px;">Extra content to enable scrolling...</p>
+    </section>
+
+    <section>
+      <h2>5. Fixed</h2>
+      <p>Positioned relative to the viewport. Stays in place even when scrolling.</p>
+      <div class="demo-box fixed-box">Fixed Box</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Demo created to illustrate CSS position values: static, relative, absolute, sticky, and fixed.</p>
+  </footer>
+</body>
+</html>

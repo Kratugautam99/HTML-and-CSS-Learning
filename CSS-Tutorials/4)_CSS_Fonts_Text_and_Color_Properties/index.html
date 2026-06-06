@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Fonts, Text and Color Properties</title>
+  <style>
+    /* Import Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      color: hsl(130, 61%, 44%);
+      background-color: rgb(76, 125, 59);
+      padding: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-decoration-color: blue;
+      text-decoration-thickness: 3px;
+      margin-top: 20px;
+    }
+
+    p {
+      font-family: 'Baloo Bhai 2', sans-serif;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .lorem {
+      border: 2px solid red;
+      width: 250px;
+      word-break: break-word;
+      padding: 10px;
+      margin: 15px auto;
+    }
+
+    ol {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fonts & Colors Showcase</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Fonts</h2>
+      <p>This is a demo on fonts.</p>
+      <p class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sequi accusamus quas itaque molestias dolorem quisquam quod, adipisci maxime dolore, mollitia illo officia deserunt voluptatem iure qui.
+      </p>
+    </section>
+
+    <section>
+      <h2>About Colors</h2>
+      <p>Color can be represented in:</p>
+      <ol>
+        <li>Color Keywords</li>
+        <li>Hex Color Code</li>
+        <li>RGB</li>
+        <li>RGBA</li>
+        <li>HSL</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CSS Fonts, Text and Color Properties</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Injection Methods</title>
+
+  <!-- Internal CSS -->
+  <style>
+    .internal-style {
+      color: darkblue;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+
+  <!-- External CSS link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Demonstration</h1>
+  </header>
+
+  <main>
+    <!-- Inline CSS -->
+    <p style="color: red; font-size: 18px;">
+      This paragraph uses <strong>inline CSS</strong>.
+    </p>
+
+    <!-- Internal CSS -->
+    <p class="internal-style">
+      This paragraph uses <strong>internal CSS</strong>.
+    </p>
+
+    <!-- External CSS -->
+    <p class="external-style">
+      This paragraph uses <strong>external CSS</strong>.
+    </p>
+  </main>
+</body>
+</html>

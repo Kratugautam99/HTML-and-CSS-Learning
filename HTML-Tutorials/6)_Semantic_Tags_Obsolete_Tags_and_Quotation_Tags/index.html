@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character set declaration -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Showcase</title>
+</head>
+<body>
+  <header>
+    <h1>HTML Showcase Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#entities">Entities</a></li>
+        <li><a href="#obsolete">Obsolete</a></li>
+        <li><a href="#canvas">Canvas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Code Example -->
+    <section id="code">
+      <h2>Code Examples</h2>
+      <p>Inline code (no pre): <code>let x = 10; console.log(x);</code></p>
+      <p>Block code with pre:</p>
+      <pre><code>
+function greet() {
+  console.log("Hello from pre + code!");
+}
+      </code></pre>
+    </section>
+
+    <!-- Quotes -->
+    <section id="quotes">
+      <h2>Quotation Tags</h2>
+      <p>Inline quote using <q>HTML makes structure meaningful</q>.</p>
+      <blockquote>
+        “The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.”  
+        — Tim Berners‑Lee
+      </blockquote>
+    </section>
+
+    <!-- Entities -->
+    <section id="entities">
+      <h2>Entities</h2>
+      <p>Reserved characters: &lt;div&gt; &amp; &lt;/div&gt;</p>
+      <p>Non‑breaking space: Hello&nbsp;World</p>
+      <p>Special symbols: &copy; 2026 MySite &hearts; &reg; &euro; &yen;</p>
+    </section>
+
+    <!-- Obsolete Tags -->
+    <section id="obsolete">
+      <h2>Obsolete Tags</h2>
+      <center>
+        <font color="blue" size="5">
+          This text uses <u>obsolete</u> tags!
+        </font>
+      </center>
+      <p><em>Note:</em> These tags still work in browsers but are not recommended. Use CSS instead.</p>
+    </section>
+
+    <!-- Canvas -->
+    <section id="canvas">
+      <h2>Canvas Demo</h2>
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        Your browser does not support the HTML canvas tag.
+      </canvas>
+      <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "yellowgreen";
+        ctx.fillRect(20, 20, 160, 60);
+        ctx.strokeStyle = "black";
+        ctx.strokeRect(20, 20, 160, 60);
+        ctx.font = "16px Arial";
+        ctx.fillStyle = "black";
+        ctx.fillText("Hello Canvas!", 50, 55);
+      </script>
+    </section>
+  </main>
+
+  <aside>
+    <h3>Sidebar Note</h3>
+    <p>This aside contains extra info about HTML history.</p>
+  </aside>
+
+  <footer>
+    <p>&copy; 2026 HTML Showcase</p>
+    <address>Contact: <a href="mailto:test@example.com">test@example.com</a></address>
+  </footer>
+</body>
+</html>

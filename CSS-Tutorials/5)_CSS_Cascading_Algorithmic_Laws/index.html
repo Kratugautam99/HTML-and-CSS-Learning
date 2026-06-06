@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Cascading Algorithmic Laws</title>
+  <style>
+    /* ===== Browser Defaults (User Agent Stylesheet) =====
+       Example: <p> is block-level by default.
+       We override these below.
+    */
+
+    /* ===== Author Stylesheet ===== */
+    /* Element selector → specificity = 1 */
+    p {
+      color: blue;
+    }
+
+    /* Class selector → specificity = 10 */
+    .highlight {
+      color: green;
+    }
+
+    /* ID selector → specificity = 100 */
+    #special {
+      color: red;
+    }
+
+    /* Later rule wins if specificity is equal */
+    p {
+      color: orange;
+    }
+
+    /* !important overrides everything else */
+    .highlight {
+      color: purple !important;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Cascade Demonstration</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Source Order</h2>
+      <p>This paragraph is orange because the last <code>p</code> rule wins.</p>
+    </section>
+
+    <section>
+      <h2>2. Specificity</h2>
+      <p class="highlight">This paragraph is purple because class with <code>!important</code> beats element rules.</p>
+      <p id="special">This paragraph would be red (ID wins over class/element), but is overridden by <code>!important</code> if combined.</p>
+    </section>
+
+    <section>
+      <h2>3. Origin</h2>
+      <p>
+        Browser defaults apply first, then author styles (this file).  
+        If a user stylesheet were loaded (e.g., accessibility overrides), it could override author styles unless <code>!important</code> is used.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Importance</h2>
+      <p class="highlight">This text is purple because <code>!important</code> trumps even inline styles.</p>
+      <p style="color: brown;">This inline style would normally win, but <code>!important</code> beats it.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Demo created to illustrate the four laws of the CSS cascade: Importance, Origin, Specificity, and Source Order.</p>
+  </footer>
+</body>
+</html>

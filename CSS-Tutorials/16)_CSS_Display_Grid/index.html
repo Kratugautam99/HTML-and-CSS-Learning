@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    /* --- Demo 1: Explicit Rows & Columns --- */
+    .container-1 {
+      width: 80vw;
+      height: 50vh;
+      border: 2px solid black;
+      display: grid;
+      grid-template-columns: repeat(4, 80px);
+      grid-template-rows: repeat(2, 80px);
+      row-gap: 10px;
+      column-gap: 44px;
+      justify-items: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      border: 2px solid red;
+      height: 55px;
+      width: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* --- Demo 2: Grid Template Areas --- */
+    .container-2 {
+      border: 2px solid black;
+      display: grid;
+      grid-template-areas:
+        "nav nav nav"
+        "side article article"
+        "footer footer footer";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 10px;
+    }
+
+    .item-1 { grid-area: nav; background-color: aqua; }
+    .item-2 { grid-area: side; background-color: beige; }
+    .item-3 { grid-area: article; background-color: azure; }
+    .item-4 { grid-area: footer; background-color: lightgray; }
+    .item-5 { grid-area: nav; background-color: pink; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Grid Examples</h1>
+    <p>This page demonstrates two different ways of using CSS Grid: explicit rows/columns and grid-template-areas.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Demo 1: Explicit Rows & Columns</h2>
+      <div class="container-1">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+      </div>
+      <p>Here we define rows and columns explicitly using <code>grid-template-columns</code> and <code>grid-template-rows</code>. Items are placed automatically into the grid cells.</p>
+    </section>
+
+    <section>
+      <h2>Demo 2: Grid Template Areas</h2>
+      <div class="container-2">
+        <div class="item item-1">Nav 1</div>
+        <div class="item item-2">Sidebar</div>
+        <div class="item item-3">Article</div>
+        <div class="item item-4">Footer</div>
+        <div class="item item-5">Nav 2</div>
+      </div>
+      <p>Here we use <code>grid-template-areas</code> to define named regions (nav, side, article, footer). Each item is assigned to a region with <code>grid-area</code>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CSS Grid Tutorial</p>
+  </footer>
+</body>
+</html>

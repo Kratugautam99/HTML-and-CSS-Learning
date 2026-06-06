@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model and Margin Collapse</title>
+  <style>
+    /* Reset for clarity */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .box {
+      width: 200px;
+      background-color: lightblue;
+      padding: 20px;          /* space inside the box */
+      border: 5px solid navy; /* border around the box */
+      margin: 30px auto;      /* space outside the box */
+      text-align: center;
+    }
+
+    .collapse-demo {
+      background-color: lightcoral;
+      padding: 10px;
+    }
+
+    .collapse-demo p {
+      margin: 20px 0; /* vertical margins will collapse */
+      background-color: #fff;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Box Model & Margin Collapse</h1>
+
+  <section>
+    <h2>Box Model Example</h2>
+    <div class="box">
+      Content Area
+    </div>
+    <p>
+      The blue box has <strong>padding</strong> inside, a <strong>border</strong> around it, and <strong>margin</strong> outside.
+    </p>
+  </section>
+
+  <section class="collapse-demo">
+    <h2>Margin Collapse Example</h2>
+    <p>Paragraph One</p>
+    <p>Paragraph Two</p>
+    <p>Paragraph Three</p>
+    <p>
+      Notice how the vertical margins between paragraphs collapse into a single space instead of stacking.
+    </p>
+  </section>
+</body>
+</html>

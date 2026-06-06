@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Font Size Units</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      color: #2c3e50;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 0.5rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #34495e;
+      margin-bottom: 0.5rem;
+    }
+
+    .example {
+      border: 1px dashed #ccc;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      background: #f0f8ff;
+    }
+
+    /* Demonstrations */
+    .px-example { font-size: 20px; }
+    .em-example { font-size: 2em; }
+    .rem-example { font-size: 1.5rem; }
+    .percent-example { font-size: 120%; }
+    .vw-example { font-size: 5vw; }
+    .vh-example { font-size: 5vh; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Font Size Units</h1>
+    <p>Understanding absolute, relative, and viewport-based units</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Pixels (<code>px</code>)</h2>
+      <p>Absolute unit. Fixed size regardless of parent or root.</p>
+      <div class="example px-example">This text is 20px.</div>
+    </section>
+
+    <section>
+      <h2>2. Em (<code>em</code>)</h2>
+      <p>Relative to the font size of the parent element.</p>
+      <div style="font-size: 16px;">
+        Parent is 16px → <span class="example em-example">This text is 2em (32px).</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Rem (<code>rem</code>)</h2>
+      <p>Relative to the root (<code>html</code>) font size, usually 16px by default.</p>
+      <div class="example rem-example">This text is 1.5rem (24px if root is 16px).</div>
+    </section>
+
+    <section>
+      <h2>4. Percent (<code>%</code>)</h2>
+      <p>Relative to the parent element’s font size.</p>
+      <div style="font-size: 20px;">
+        Parent is 20px → <span class="example percent-example">This text is 120% (24px).</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. Viewport Units (<code>vw</code>, <code>vh</code>)</h2>
+      <p>Relative to the size of the viewport.</p>
+      <div class="example vw-example">This text is 5vw (5% of viewport width).</div>
+      <div class="example vh-example">This text is 5vh (5% of viewport height).</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Demo created to illustrate CSS font size units: px, em, rem, %, vw, vh.</p>
+  </footer>
+</body>
+</html>

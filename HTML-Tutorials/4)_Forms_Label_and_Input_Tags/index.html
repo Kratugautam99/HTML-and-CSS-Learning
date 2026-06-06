@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corn Quality Data Form</title>
+</head>
+<body>
+    <form action="/submit-corn-quality" method="post">
+        <div style="color: blue; font-size: 0.9em;">* Test weight is a critical factor in determining corn quality.</div><br>
+        <label for="moisture">Moisture Content (%):</label>
+        <input type="number" id="moisture" name="moisture" step="0.1" placeholder="moisture level" required><br><br>
+
+        <label for="protein">Protein Content (%):</label>
+        <input type="number" id="protein" name="protein" step="0.1" placeholder="protein level" required><br><br>
+
+        <label for="test-weight">Test Weight (lbs/bu):</label>
+        <input type="number" id="test-weight" name="test-weight" step="0.1" placeholder="test weight" required><br><br>
+        <span style="color: red; font-size: 0.9em;">* Check if the corn is damaged.</span><br><br>
+        <label for="damage">Damaged?:</label>
+        <input type="checkbox" id="damage" name="damage"><br><br>
+        <input type="submit" value="Submit">
+        <!-- The form will submit the data to the specified action URL using the POST method. -->
+    </form>
+</body>
+</html>

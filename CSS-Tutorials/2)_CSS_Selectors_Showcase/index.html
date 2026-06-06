@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Showcase</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    header, main, footer {
+      margin-bottom: 20px;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    /* Element Selector */
+    div {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Class Selector */
+    .red {
+      background-color: #e74c3c;
+      color: #fff;
+    }
+
+    /* ID Selector */
+    #green {
+      background-color: #27ae60;
+      color: #fff;
+    }
+
+    /* Child Selector */
+    div > p {
+      color: #2980b9;
+      background-color: #d35400;
+      padding: 5px;
+    }
+
+    /* Descendant Selector */
+    div p {
+      color: #2980b9;
+      background-color: #f39c12;
+      padding: 5px;
+    }
+
+    /* Pseudo-class Selectors for Links */
+    a:link { color: #2ecc71; text-decoration: none; }
+    a:visited { color: #9b59b6; }
+    a:hover { background-color: #f1c40f; color: #000; }
+    a:active { background-color: #e74c3c; color: #fff; }
+
+    /* Pseudo-class Selector for First Child */
+    p:first-child {
+      background-color: #1abc9c;
+      color: #fff;
+      padding: 5px;
+    }
+
+    /* --- More on CSS Selectors --- */
+
+    /* Universal selector inside .boxes */
+    .boxes * {
+      border: 1px solid #000;
+      margin: 5px;
+    }
+
+    /* Grouping selector */
+    p, a, .box, [data-color="primary"] {
+      padding-top: 10px;
+    }
+
+    /* nth-child */
+    .box:nth-child(odd) {
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    /* nth-last-child */
+    .box:nth-last-child(2) {
+      background-color: #e74c3c;
+      color: #fff;
+    }
+
+    /* Pseudo-elements */
+    .boxes::before {
+      content: "Before content → ";
+      color: blue;
+    }
+
+    .boxes::after {
+      content: " ← After content";
+      color: red;
+    }
+
+    ::selection {
+      background-color: black;
+      color: aqua;
+    }
+
+    .box::first-letter {
+      color: peru;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    input::placeholder {
+      color: rgb(84, 84, 88);
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors Demonstration</h1>
+    <p>This page demonstrates different types of CSS selectors.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Child and Descendant Selectors</h2>
+      <div class="red">
+        <p>I am a direct child paragraph inside div</p>
+        <article>
+          <p>I am a descendant paragraph inside div → article</p>
+        </article>
+      </div>
+
+      <div id="green">
+        <p>I am inside another div with ID selector</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Link Selectors</h2>
+      <p>Try clicking these links to see pseudo-class effects:</p>
+      <a href="https://www.google.com" target="_blank">Go to Google</a><br>
+      <a href="https://www.wikipedia.org" target="_blank">Go to Wikipedia</a>
+    </section>
+
+    <section>
+      <h2>More on CSS Selectors</h2>
+      <div class="boxes">
+        <div data-color="primary" class="box">I am first box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am another box</div>
+        <input type="text" placeholder="Type your name here">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CSS Selectors Showcase</p>
+  </footer>
+</body>
+</html>

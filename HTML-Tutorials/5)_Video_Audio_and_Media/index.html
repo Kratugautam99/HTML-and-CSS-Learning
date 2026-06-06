@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Elements</title>
+</head>
+    <body>
+        <!-- SVG Circle -->
+        <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+
+        <!-- Video from Pexels (royalty-free stock video) -->
+        <video src="test.mp4" 
+                height="255" controls loop muted 
+                poster="https://images.pexels.com/photos/856992/pexels-photo-856992.jpeg">
+        </video>
+
+        <!-- Audio from Free Music Archive -->
+        <audio src="test.mp3" 
+                controls autoplay loop muted>
+        </audio>
+
+        <!-- Image from Unsplash -->
+        <img src="test.jpg" alt="Cool Unsplash Image" width="300">
+
+        <!-- YouTube Embed -->
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/_DJb5HjeDkQ?autoplay=0&mute=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+        </iframe>
+    </body>
+</html>
