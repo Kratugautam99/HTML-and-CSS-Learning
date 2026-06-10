@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0, viewport-fit=cover">
+    <title>Home / X</title>
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: white;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        /* custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #16181c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3e4147;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6e767d;
+        }
+        .post-transition {
+            transition: all 0.2s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+        .trend-item, .follow-item {
+            transition: background 0.2s;
+        }
+        .sticky-side {
+            position: sticky;
+            top: 0;
+            align-self: start;
+        }
+        .sidebar-link {
+            transition: background 0.2s ease;
+        }
+        /* active indicator simulation */
+        .nav-active {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <div class="flex max-w-[1280px] mx-auto my-2 md:my-4 px-2 md:px-0">
+        <!-- SIDEBAR (First column) -->
+        <div class="w-16 md:w-[275px] lg:w-[275px] flex-shrink-0">
+            <div class="sidebar flex flex-col md:items-end sticky top-0 h-screen overflow-y-auto">
+                <div class="logo my-4 self-start mx-2 md:mx-6">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 h-8 fill-white">
+                        <g>
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                        </g>
+                    </svg>
+                </div>
+                <ul class="flex flex-col space-y-2 w-full">
+                    <li class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-3 py-2 hover:rounded-full transition rounded-full">
+                        <span class="text-2xl md:text-3xl material-symbols-outlined">home</span>
+                        <span class="hidden md:inline-block text-xl font-medium">Home</span>
+                    </li>
+                    <li class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-3 py-2 hover:rounded-full transition rounded-full">
+                        <span class="text-2xl md:text-3xl material-symbols-outlined">search</span>
+                        <span class="hidden md:inline-block text-xl font-medium">Explore</span>
+                    </li>
+                    <li class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-3 py-2 hover:rounded-full transition rounded-full">
+                        <span class="text-2xl md:text-3xl material-symbols-outlined">notifications</span>
+                        <span class="hidden md:inline-block text-xl font-medium">Notifications</span>
+                    </li>
+                    <li class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-3 py-2 hover:rounded-full transition rounded-full">
+                        <span class="text-2xl md:text-3xl material-symbols-outlined">message</span>
+                        <span class="hidden md:inline-block text-xl font-medium">Messages</span>
+                    </li>
+                    <li class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-3 py-2 hover:rounded-full transition rounded-full">
+                        <span class="text-2xl md:text-3xl material-symbols-outlined">lists</span>
+                        <span class="hidden md:inline-block text-xl font-medium">Lists</span>
+                    </li>
+                    <li class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-3 py-2 hover:rounded-full transition rounded-full">
+                        <span class="text-2xl md:text-3xl material-symbols-outlined">bookmarks</span>
+                        <span class="hidden md:inline-block text-xl font-medium">Bookmarks</span>
+                    </li>
+                    <li class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-3 py-2 hover:rounded-full transition rounded-full">
+                        <span class="text-2xl md:text-3xl material-symbols-outlined">group</span>
+                        <span class="hidden md:inline-block text-xl font-medium">Communities</span>
+                    </li>
+                    <li class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-3 py-2 hover:rounded-full transition rounded-full">
+                        <span class="text-2xl md:text-3xl material-symbols-outlined">box</span>
+                        <span class="hidden md:inline-block text-xl font-medium">Premium</span>
+                    </li>
+                    <li class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-3 py-2 hover:rounded-full transition rounded-full">
+                        <span class="text-2xl md:text-3xl material-symbols-outlined">person</span>
+                        <span class="hidden md:inline-block text-xl font-medium">Profile</span>
+                    </li>
+                    <li class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-3 py-2 hover:rounded-full transition rounded-full">
+                        <span class="text-2xl md:text-3xl material-symbols-outlined">pending</span>
+                        <span class="hidden md:inline-block text-xl font-medium">More</span>
+                    </li>
+                    <li class="mt-2">
+                        <div class="button w-full text-center my-2">
+                            <button class="hidden md:block bg-[#1d9bf0] w-full max-w-[200px] text-lg rounded-full py-3 font-bold hover:bg-[#1a8cd8] transition">Post</button>
+                            <button class="md:hidden bg-[#1d9bf0] p-2 rounded-full"><span class="material-symbols-outlined">edit</span></button>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- User profile section (replaced with new persona: Maya Rivera) -->
+                <div class="userprofile w-full mt-6 mb-4 hidden md:flex justify-end px-2">
+                    <div class="item p-2 items-center gap-3 justify-between flex hover:bg-gray-800 cursor-pointer rounded-full w-full max-w-[240px] transition">
+                        <div class="p1"><img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="avatar"></div>
+                        <div class="p2 flex-1">
+                            <div class="font-bold text-sm">Maya Rivera</div>
+                            <div class="text-gray-500 text-xs">@creativemaya</div>
+                        </div>
+                        <div class="p3 text-xl">···</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN FEED (Second column) -->
+        <div class="flex-1 max-w-[600px] w-full border-x border-gray-800">
+            <div class="top flex p-3 sticky top-0 bg-black/80 backdrop-blur-md z-10 border-b border-gray-800">
+                <div class="relative flex w-full">
+                    <div class="left w-1/2 flex justify-center font-bold text-base cursor-pointer hover:bg-gray-900 py-2 rounded-full transition">For You</div>
+                    <div class="right w-1/2 flex justify-center font-bold text-base cursor-pointer hover:bg-gray-900 py-2 rounded-full transition">Following</div>
+                    <div class="settings mx-2 flex items-center"><span class="material-symbols-outlined cursor-pointer">settings</span></div>
+                </div>
+            </div>
+
+            <!-- Tweet composer -->
+            <div class="whatishapp flex gap-3 p-3 border-b border-gray-800">
+                <div class="img w-12">
+                    <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="user">
+                </div>
+                <div class="flex-1">
+                    <input id="tweetInput" class="w-full text-lg bg-black outline-none text-white placeholder-gray-500" type="text" placeholder="What is happening?!">
+                    <div class="text-blue-400 flex items-center gap-1 text-sm my-2">
+                        <span class="material-symbols-outlined text-base">globe_asia</span>
+                        <span class="font-medium">Everyone can reply</span>
+                    </div>
+                    <div class="w-full h-px bg-gray-800 my-2"></div>
+                    <div class="flex justify-between items-center">
+                        <div class="blueicons flex gap-3 text-blue-400">
+                            <span class="material-symbols-outlined cursor-pointer hover:text-blue-300">image</span>
+                            <span class="material-symbols-outlined cursor-pointer hover:text-blue-300">gif</span>
+                            <span class="material-symbols-outlined cursor-pointer hover:text-blue-300">ballot</span>
+                            <span class="material-symbols-outlined cursor-pointer hover:text-blue-300">sentiment_satisfied</span>
+                            <span class="material-symbols-outlined cursor-pointer hover:text-blue-300">calendar_month</span>
+                            <span class="material-symbols-outlined cursor-pointer hover:text-blue-300">pin_drop</span>
+                        </div>
+                        <button id="postBtn" class="bg-[#1d9bf0] px-5 py-1.5 rounded-full text-sm font-bold hover:bg-[#1a8cd8] transition">Post</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Posts container (dynamic + static mix) -->
+            <div id="postsContainer" class="posts divide-y divide-gray-800">
+                <!-- Static posts (replaced harry stuff with random creators) -->
+                <div class="post p-3 hover:bg-white/5 transition">
+                    <div class="flex gap-3">
+                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" alt="avatar">
+                        <div class="flex-1">
+                            <div><span class="font-bold hover:underline cursor-pointer">Alex Chen</span> <span class="text-gray-500 text-sm">@alexcreates · 3h</span></div>
+                            <div class="mt-1">Just launched my new design system — open source and ready to use! 🚀 Finally something that makes UI consistent across all projects. #webdev</div>
+                            <div class="flex justify-between max-w-md mt-2 text-gray-500">
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-blue-400"><span class="material-symbols-outlined text-base">chat_bubble</span> 234</div>
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-green-400"><span class="material-symbols-outlined text-base">repeat</span> 89</div>
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-pink-500"><span class="material-symbols-outlined text-base">favorite</span> 1.2k</div>
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-blue-400"><span class="material-symbols-outlined text-base">bar_chart</span> 540</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post p-3 hover:bg-white/5 transition">
+                    <div class="flex gap-3">
+                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/44.jpg" alt="avatar">
+                        <div class="flex-1">
+                            <div><span class="font-bold hover:underline cursor-pointer">Sophia Lin</span> <span class="text-gray-500 text-sm">@sophia_code · 7h</span></div>
+                            <div class="mt-1">It's surreal seeing the Northern Lights in person. Nature is the best developer 🔥✨</div>
+                            <div class="mt-2 rounded-xl overflow-hidden"><img class="w-full rounded-xl" src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&auto=format" alt="aurora"></div>
+                            <div class="flex justify-between max-w-md mt-2 text-gray-500">
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-blue-400"><span class="material-symbols-outlined text-base">chat_bubble</span> 1.4k</div>
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-green-400"><span class="material-symbols-outlined text-base">repeat</span> 324</div>
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-pink-500"><span class="material-symbols-outlined text-base">favorite</span> 6.2k</div>
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-blue-400"><span class="material-symbols-outlined text-base">bar_chart</span> 2.1k</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post p-3 hover:bg-white/5 transition">
+                    <div class="flex gap-3">
+                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/45.jpg" alt="avatar">
+                        <div class="flex-1">
+                            <div><span class="font-bold hover:underline cursor-pointer">TechWithZara</span> <span class="text-gray-500 text-sm">@zara_tech · 12h</span></div>
+                            <div class="mt-1">Why everyone should learn TailwindCSS in 2025 — productivity boost like never before. 🎨💻</div>
+                            <div class="postimg mt-2"><img class="rounded-xl" src="https://pbs.twimg.com/media/GEGqnodacAAoyCO?format=jpg&name=small" alt="meme"></div>
+                            <div class="flex justify-between max-w-md mt-2 text-gray-500">
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-blue-400"><span class="material-symbols-outlined text-base">chat_bubble</span> 512</div>
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-green-400"><span class="material-symbols-outlined text-base">repeat</span> 187</div>
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-pink-500"><span class="material-symbols-outlined text-base">favorite</span> 3k</div>
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-blue-400"><span class="material-symbols-outlined text-base">bar_chart</span> 876</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post p-3 hover:bg-white/5 transition">
+                    <div class="flex gap-3">
+                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/19.jpg" alt="avatar">
+                        <div class="flex-1">
+                            <div><span class="font-bold hover:underline cursor-pointer">Marcus Devlin</span> <span class="text-gray-500 text-sm">@marcuscodes · 1d</span></div>
+                            <div class="mt-1">This is the best programming meme I've seen all week 🤣 (credits to the internet)</div>
+                            <div class="postimg mt-2"><img class="rounded-xl w-full" src="https://s3.amazonaws.com/rails-camp-tutorials/blog/programming+memes/works-doesnt-work.jpg" alt="coding meme"></div>
+                            <div class="flex justify-between max-w-md mt-2 text-gray-500">
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-blue-400"><span class="material-symbols-outlined text-base">chat_bubble</span> 2.3k</div>
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-green-400"><span class="material-symbols-outlined text-base">repeat</span> 950</div>
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-pink-500"><span class="material-symbols-outlined text-base">favorite</span> 8.1k</div>
+                                <div class="icon group flex items-center gap-1 cursor-pointer hover:text-blue-400"><span class="material-symbols-outlined text-base">bar_chart</span> 1.5k</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDEBAR (Trends & Who to follow + fixed links) -->
+        <div class="hidden lg:block w-[350px] ml-4 space-y-4">
+            <div class="sticky top-0 space-y-4">
+                <div class="search">
+                    <input type="text" class="w-full rounded-full bg-[#16181c] text-white px-5 py-2.5 outline-none focus:ring-1 focus:ring-blue-500 placeholder-gray-400" placeholder="Search">
+                </div>
+
+                <!-- What's happening -->
+                <div class="bg-[#16181c] rounded-2xl p-4 space-y-3">
+                    <h2 class="text-xl font-extrabold">What's happening</h2>
+                    <div class="trend-item p-2 -mx-2 rounded-xl hover:bg-gray-800 cursor-pointer">
+                        <div class="text-xs text-gray-400">Trending in Technology</div>
+                        <div class="font-bold">#AIRevolution</div>
+                        <div class="text-xs text-gray-400">22.5k posts</div>
+                    </div>
+                    <div class="trend-item p-2 -mx-2 rounded-xl hover:bg-gray-800 cursor-pointer">
+                        <div class="text-xs text-gray-400">Music · Trending</div>
+                        <div class="font-bold">#NewAlbumDrop</div>
+                        <div class="text-xs text-gray-400">14.2k posts</div>
+                    </div>
+                    <div class="trend-item p-2 -mx-2 rounded-xl hover:bg-gray-800 cursor-pointer">
+                        <div class="text-xs text-gray-400">Sports · LIVE</div>
+                        <div class="font-bold">#ChampionsLeague</div>
+                        <div class="text-xs text-gray-400">87k posts</div>
+                    </div>
+                    <div class="trend-item p-2 -mx-2 rounded-xl hover:bg-gray-800 cursor-pointer">
+                        <div class="text-xs text-gray-400">Design</div>
+                        <div class="font-bold">#FigmaConfig</div>
+                        <div class="text-xs text-gray-400">6.2k posts</div>
+                    </div>
+                </div>
+
+                <!-- Who to follow (random personalities) -->
+                <div class="bg-[#16181c] rounded-2xl p-4 space-y-3">
+                    <h2 class="text-xl font-extrabold">Who to follow</h2>
+                    <div class="follow-item flex justify-between items-center p-2 -mx-2 rounded-xl hover:bg-gray-800">
+                        <div class="flex gap-2">
+                            <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/75.jpg" alt="avatar">
+                            <div><div class="font-bold">Rohan Mehta</div><div class="text-gray-400 text-sm">@rohan_dev</div></div>
+                        </div>
+                        <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-bold hover:bg-gray-200">Follow</button>
+                    </div>
+                    <div class="follow-item flex justify-between items-center p-2 -mx-2 rounded-xl hover:bg-gray-800">
+                        <div class="flex gap-2">
+                            <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/90.jpg" alt="avatar">
+                            <div><div class="font-bold">Lina Zhang</div><div class="text-gray-400 text-sm">@artwithlina</div></div>
+                        </div>
+                        <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-bold hover:bg-gray-200">Follow</button>
+                    </div>
+                    <div class="follow-item flex justify-between items-center p-2 -mx-2 rounded-xl hover:bg-gray-800">
+                        <div class="flex gap-2">
+                            <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/52.jpg" alt="avatar">
+                            <div><div class="font-bold">Carlos Mendez</div><div class="text-gray-400 text-sm">@carlos_ai</div></div>
+                        </div>
+                        <button class="bg-white text-black px-4 py-1 rounded-full text-sm font-bold hover:bg-gray-200">Follow</button>
+                    </div>
+                    <div class="text-blue-500 text-sm cursor-pointer hover:underline pt-1">Show more</div>
+                </div>
+
+                <!-- FOOTER / TERMS (all links are clickable and functional - open new tab dummy info) -->
+                <div class="text-xs text-gray-500 px-2 pb-6 leading-relaxed space-x-1 flex flex-wrap gap-x-2 gap-y-1">
+                    <a href="#" class="hover:underline cursor-pointer" onclick="alert('Terms of Service (demo)'); return false;">Terms of Service</a>
+                    <span>·</span>
+                    <a href="#" class="hover:underline cursor-pointer" onclick="alert('Privacy Policy - demo'); return false;">Privacy Policy</a>
+                    <span>·</span>
+                    <a href="#" class="hover:underline cursor-pointer" onclick="alert('Cookie Policy'); return false;">Cookie Policy</a>
+                    <span>·</span>
+                    <a href="#" class="hover:underline cursor-pointer" onclick="alert('Accessibility'); return false;">Accessibility</a>
+                    <span>·</span>
+                    <a href="#" class="hover:underline cursor-pointer" onclick="alert('Ads information'); return false;">Ads info</a>
+                    <span>·</span>
+                    <a href="#" class="hover:underline cursor-pointer" onclick="alert('More resources'); return false;">More</a>
+                    <span>·</span>
+                    <a href="#" class="hover:underline cursor-pointer" onclick="alert('© 2025 X Corp.'); return false;">© 2025 X Corp.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DYNAMIC POST CREATION: replaces code with random persona posts, full functionality
+        const postBtn = document.getElementById('postBtn');
+        const tweetInput = document.getElementById('tweetInput');
+        const postsContainer = document.getElementById('postsContainer');
+
+        // random avatars and usernames for new posts
+        const randomUsers = [
+            { name: "Jamie Walsh", handle: "@jamiewalsh", avatar: "https://randomuser.me/api/portraits/men/21.jpg" },
+            { name: "Priya Kapoor", handle: "@priyacreates", avatar: "https://randomuser.me/api/portraits/women/33.jpg" },
+            { name: "Darius King", handle: "@darius_codes", avatar: "https://randomuser.me/api/portraits/men/86.jpg" },
+            { name: "Elena Rossi", handle: "@elenadigital", avatar: "https://randomuser.me/api/portraits/women/55.jpg" },
+            { name: "Marcus Thorne", handle: "@marcustech", avatar: "https://randomuser.me/api/portraits/men/15.jpg" }
+        ];
+
+        function getRandomUser() {
+            return randomUsers[Math.floor(Math.random() * randomUsers.length)];
+        }
+
+        function formatNumber(num) {
+            if (num > 999) return (num/1000).toFixed(1) + 'k';
+            return num;
+        }
+
+        function createPostElement(content, userObj) {
+            const randomLikes = Math.floor(Math.random() * 8000) + 200;
+            const randomComments = Math.floor(Math.random() * 500) + 10;
+            const randomRetweets = Math.floor(Math.random() * 400) + 5;
+            const randomViews = Math.floor(Math.random() * 12000) + 300;
+            
+            const postDiv = document.createElement('div');
+            postDiv.className = 'post p-3 hover:bg-white/5 transition border-b border-gray-800';
+            postDiv.innerHTML = `
+                <div class="flex gap-3">
+                    <img class="w-10 h-10 rounded-full" src="${userObj.avatar}" alt="avatar">
+                    <div class="flex-1">
+                        <div><span class="font-bold hover:underline cursor-pointer">${userObj.name}</span> <span class="text-gray-500 text-sm">${userObj.handle} · just now</span></div>
+                        <div class="mt-1 whitespace-pre-wrap">${escapeHtml(content)}</div>
+                        <div class="flex justify-between max-w-md mt-2 text-gray-500">
+                            <div class="icon group flex items-center gap-1 cursor-pointer hover:text-blue-400"><span class="material-symbols-outlined text-base">chat_bubble</span> ${formatNumber(randomComments)}</div>
+                            <div class="icon group flex items-center gap-1 cursor-pointer hover:text-green-400"><span class="material-symbols-outlined text-base">repeat</span> ${formatNumber(randomRetweets)}</div>
+                            <div class="icon group flex items-center gap-1 cursor-pointer hover:text-pink-500"><span class="material-symbols-outlined text-base">favorite</span> ${formatNumber(randomLikes)}</div>
+                            <div class="icon group flex items-center gap-1 cursor-pointer hover:text-blue-400"><span class="material-symbols-outlined text-base">bar_chart</span> ${formatNumber(randomViews)}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            return postDiv;
+        }
+
+        function escapeHtml(str) {
+            if(!str) return '';
+            return str.replace(/[&<>]/g, function(m) {
+                if(m === '&') return '&amp;';
+                if(m === '<') return '&lt;';
+                if(m === '>') return '&gt;';
+                return m;
+            }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, function(c) {
+                return c;
+            });
+        }
+
+        function addNewPost(text) {
+            if (!text.trim()) return false;
+            const user = getRandomUser();
+            const newPost = createPostElement(text, user);
+            // insert as first post after composer? better at the top of feed
+            const firstPost = postsContainer.firstChild;
+            postsContainer.insertBefore(newPost, firstPost);
+            return true;
+        }
+
+        postBtn.addEventListener('click', () => {
+            const content = tweetInput.value.trim();
+            if (content === "") {
+                alert("Write something to post!");
+                return;
+            }
+            addNewPost(content);
+            tweetInput.value = "";
+            // optional: scroll to top gently
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        tweetInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                postBtn.click();
+            }
+        });
+
+        // All bottom right links are now replaced with functional dummy click alerts, not dead.
+        // Additional: ensure any new anchor with dummy href works
+        document.querySelectorAll('.terms a, .text-blue-500 a, .text-xs a').forEach(link => {
+            if (!link.getAttribute('onclick')) {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    alert(`${link.innerText} (demo info page)`);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
