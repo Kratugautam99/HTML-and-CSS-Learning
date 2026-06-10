@@ -48,7 +48,7 @@ Each folder contains standalone examples, ready to open in your browser, and the
 ## 📁 Directory Structure
 
 ```
-html-and-css-learning/
+HTML-and-CSS-Learning/
 │
 ├── Atomic-Projects/                     # Full‑page clones (real‑world UI replication)
 │   ├── M365-Clone/                      # Microsoft 365 landing page clone
