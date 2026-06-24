@@ -124,47 +124,63 @@ Academic Practical Assignment Works of creating various HTML and CSS Pages :-
     <tr>
       <td style="width:33.33%; padding:8px; vertical-align:top;">
         <img src="Demonstration/Exp1Output.jpeg" alt="Exp1Output" style="max-width:300px; width:100%;"/><br/>
-        <sub>        Exp1Output</sub>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Exp1Output</sub></strong></figcaption>
+        </figure>
       </td>
       <td style="width:33.33%; padding:8px; vertical-align:top;">
         <img src="Demonstration/Exp2Output.jpeg" alt="Exp2Output" style="max-width:300px; width:100%;"/><br/>
-        <sub>        Exp2Output</sub>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Exp2Output</sub></strong></figcaption>
+        </figure>
       </td>
       <td style="width:33.33%; padding:8px; vertical-align:top;">
         <img src="Demonstration/Exp3Output.jpeg" alt="Exp3Output" style="max-width:300px; width:100%;"/><br/>
-        <sub>        Exp3Output</sub>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Exp3Output</sub></strong></figcaption>
+        </figure>
       </td>
     </tr>
     <tr style="height:260px;">
       <td style="width:33.33%; padding:8px; vertical-align:top;">
         <img src="Demonstration/Exp4Output.jpeg" alt="Exp4Output" style="max-width:300px; width:100%;"/><br/>
-        <sub>        Exp4Output</sub>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Exp4Output</sub></strong></figcaption>
+        </figure>
       </td>
-      <!-- Exp5 spans two rows vertically -->
       <td rowspan="2" style="width:33.33%; padding:0; vertical-align:middle;">
         <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; padding:8px; box-sizing:border-box;">
           <img src="Demonstration/Exp5Output.jpeg" alt="Exp5Output" style="width:100%; height:100%; object-fit:cover; display:block;"/>
         </div>
         <br/>
-        <sub>        Exp5Output</sub>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Exp5Output</sub></strong></figcaption>
+        </figure>
       </td>
       <td style="width:33.33%; padding:8px; vertical-align:top;">
         <img src="Demonstration/Exp6Output.jpeg" alt="Exp6Output" style="max-width:300px; width:100%;"/><br/>
-        <sub>        Exp6Output</sub>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Exp6Output</sub></strong></figcaption>
+        </figure>
       </td>
     </tr>
     <tr style="height:260px;">
       <td style="width:33.33%; padding:8px; vertical-align:top;">
         <img src="Demonstration/Exp7Output.jpeg" alt="Exp7Output" style="width:100%; height:auto;"/><br/>
-        <sub>        Exp7Output</sub>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Exp7Output</sub></strong></figcaption>
+        </figure>
       </td>
       <td style="width:33.33%; padding:8px; vertical-align:top;">
         <img src="Demonstration/Exp8Output.jpeg" alt="Exp8Output" style="width:100%; height:auto;"/><br/>
-        <sub>        Exp8Output</sub>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Exp8Output</sub></strong></figcaption>
+        </figure>
       </td>
     </tr>
   </table>
 </p>
+
 
 
 ---
@@ -181,16 +197,21 @@ A faithful recreation of the Microsoft 365 landing page – responsive header, h
   <table>
     <tr>
       <td align="center">
-        <img src="Demonstration/M365-UpperMainPage.png" style="width:500px;"/><br/>
-        <sub>Upper Section</sub>
+        <img src="Demonstration/M365-UpperMainPage.png" alt="M365 Upper" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Upper Section</sub></strong></figcaption>
+        </figure>
       </td>
       <td align="center">
-        <img src="Demonstration/M365-LowerMainPage.png" style="width:500px;"/><br/>
-        <sub>Lower Section</sub>
+        <img src="Demonstration/M365-LowerMainPage.png" alt="M365 Lower" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Lower Section</sub></strong></figcaption>
+        </figure>
       </td>
     </tr>
   </table>
 </p>
+
 
 
 ---
@@ -203,12 +224,16 @@ Replicates the Twitter home feed interface – sidebar, post composer, and timel
   <table>
     <tr>
       <td align="center">
-        <img src="Demonstration/X.com-BeforeMessage.png" style="width:500px;"/><br/>
-        <sub>Before Message</sub>
+        <img src="Demonstration/X.com-BeforeMessage.png" alt="Before Message" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Before Message</sub></strong></figcaption>
+        </figure>
       </td>
       <td align="center">
-        <img src="Demonstration/X.com-AfterMessage.png" style="width:500px;"/><br/>
-        <sub>After Message</sub>
+        <img src="Demonstration/X.com-AfterMessage.png" alt="After Message" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>After Message</sub></strong></figcaption>
+        </figure>
       </td>
     </tr>
   </table>
@@ -221,16 +246,21 @@ Replicates the Twitter home feed interface – sidebar, post composer, and timel
 ### 🎮 Steam Clone
 Clone of the Steam game store homepage – navigation, featured games, carousel, and sections.
 
+
 <p align="center">
   <table>
     <tr>
       <td align="center">
-        <img src="Demonstration/Steam-UpperMainPage.png" style="width:500px;"/><br/>
-        <sub>Upper Section</sub>
+        <img src="Demonstration/Steam-UpperMainPage.png" alt="Steam Upper" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Latest Offers</sub></strong></figcaption>
+        </figure>
       </td>
       <td align="center">
-        <img src="Demonstration/Steam-LowerMainPage.png" style="width:500px;"/><br/>
-        <sub>Lower Section</sub>
+        <img src="Demonstration/Steam-LowerMainPage.png" alt="Steam Lower" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>Games List</sub></strong></figcaption>
+        </figure>
       </td>
     </tr>
   </table>
@@ -247,56 +277,77 @@ Virtual Machine - based website projects exploring design thinking and prototypi
   <table>
     <tr>
       <td align="center">
-        <img src="Demonstration/VM-ZIndexPage.png" style="width:500px;"/><br/>
-        <sub>VM-ZIndexPage</sub>
+        <img src="Demonstration/VM-ZIndexPage.png" alt="VM-ZIndexPage" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>VM-ZIndexPage</sub></strong></figcaption>
+        </figure>
       </td>
       <td align="center">
-        <img src="Demonstration/VM-ZMainIntro1.png" style="width:500px;"/><br/>
-        <sub>VM-ZMainIntro1</sub>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="Demonstration/VM-ZMainIntro2.png" style="width:500px;"/><br/>
-        <sub>VM-ZMainIntro2</sub>
-      </td>
-      <td align="center">
-        <img src="Demonstration/VM-ZMainVM1.png" style="width:500px;"/><br/>
-        <sub>VM-ZMainVM1</sub>
+        <img src="Demonstration/VM-ZMainIntro1.png" alt="VM-ZMainIntro1" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>VM-ZMainIntro1</sub></strong></figcaption>
+        </figure>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <img src="Demonstration/VM-ZMainVM2.png" style="width:500px;"/><br/>
-        <sub>VM-ZMainVM2</sub>
+        <img src="Demonstration/VM-ZMainIntro2.png" alt="VM-ZMainIntro2" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>VM-ZMainIntro2</sub></strong></figcaption>
+        </figure>
       </td>
       <td align="center">
-        <img src="Demonstration/VM-ZMainXAds1.png" style="width:500px;"/><br/>
-        <sub>VM-ZMainXAds1</sub>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="Demonstration/VM-ZRedirectAbout.png" style="width:500px;"/><br/>
-        <sub>VM-ZRedirectAbout</sub>
-      </td>
-      <td align="center">
-        <img src="Demonstration/VM-ZRedirectContactUs.png" style="width:500px;"/><br/>
-        <sub>VM-ZRedirectContactUs</sub>
+        <img src="Demonstration/VM-ZMainVM1.png" alt="VM-ZMainVM1" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>VM-ZMainVM1</sub></strong></figcaption>
+        </figure>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <img src="Demonstration/VM-ZRedirectHome.png" style="width:500px;"/><br/>
-        <sub>VM-ZRedirectHome</sub>
+        <img src="Demonstration/VM-ZMainVM2.png" alt="VM-ZMainVM2" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>VM-ZMainVM2</sub></strong></figcaption>
+        </figure>
       </td>
       <td align="center">
-        <img src="Demonstration/VM-ZRedirectISODownloadPage.png" style="width:500px;"/><br/>
-        <sub>VM-ZRedirectISODownloadPage</sub>
+        <img src="Demonstration/VM-ZMainXAds1.png" alt="VM-ZMainXAds1" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>VM-ZMainXAds1</sub></strong></figcaption>
+        </figure>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="Demonstration/VM-ZRedirectAbout.png" alt="VM-ZRedirectAbout" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>VM-ZRedirectAbout</sub></strong></figcaption>
+        </figure>
+      </td>
+      <td align="center">
+        <img src="Demonstration/VM-ZRedirectContactUs.png" alt="VM-ZRedirectContactUs" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>VM-ZRedirectContactUs</sub></strong></figcaption>
+        </figure>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="Demonstration/VM-ZRedirectHome.png" alt="VM-ZRedirectHome" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>VM-ZRedirectHome</sub></strong></figcaption>
+        </figure>
+      </td>
+      <td align="center">
+        <img src="Demonstration/VM-ZRedirectISODownloadPage.png" alt="VM-ZRedirectISODownloadPage" style="width:500px;"/><br/>
+        <figure style="margin:0;">
+          <figcaption><strong><sub>VM-ZRedirectISODownloadPage</sub></strong></figcaption>
+        </figure>
       </td>
     </tr>
   </table>
 </p>
+
 
 
 
