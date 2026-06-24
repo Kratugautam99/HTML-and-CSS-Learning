@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        /* You can add some CSS styles here to decorate your login page */
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            background-color: red;
+            padding: 20px;
+        }
+        #container {
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px grey;
+            background-image: url("^1^");
+            background-size: cover;
+        }
+        #form {
+            width: 400px;
+            height: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+        }
+        input {
+            display: inline-block;
+            width: 250px;
+            height: 30px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+        input[type=submit] {
+            width: 150px;
+            height: 40px;
+            margin-left: 100px;
+            background-color: red;
+            color: white;
+        }
+        select {
+            display: inline-block;
+            width: 250px;
+            height: 30px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+        option {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <div id="container">
+        <form id="form" action="^2^" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">Select a category</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="admin">Admin</option>
+                <option value="guest">Guest</option>
+            </select><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

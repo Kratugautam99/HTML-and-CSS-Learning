@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+<h1>ONLINE  COURSE REGISTRATION </h1>
+</head>
+
+<body bgcolor="Orange">
+
+<br>
+<br>
+
+<form name="STUDENT-REGFORM" onsubmit="return Kratu()" method="post">
+<label> Firstname </label>
+<input type="text" name="firstname" size="18"/> <br> <br>
+
+<label>Middle name: </label>
+<input type= "text" name="middlename" size="18"/> <br> <br>
+
+<label> Lastname: </label>
+<input type="text" name="lastname" size="18"/> <br> <br>
+
+<label>
+Courses:
+</label>
+ 
+<select>
+<option value="Data Science">Data Science</option>
+<option value="Artificial Intelligence">Artificial Intelligence</option>
+<option value="Machine Learning">Machine Learning</option>
+<option value="Web Development">Web Development</option>
+<option value="Cyber Security">Cyber Security</option>
+<option value="App Development">App Development</option>
+</select>
+
+<br>
+<br>
+
+<label>
+Gender :
+</label><br>
+
+<input type="radio" id="Male" name="Gender" value="Male">
+<label for=" Male">Male</label><br>
+
+
+<input type="radio" id="Female" name="Gender" value="Female">
+<label for=" Female">Female</label><br>
+ 
+
+<input type="radio" id="Others" name="Gender" value="Others">
+<label for=" Others">Others</label><br>
+
+<br>
+<br>
+
+<label>
+Phone : 
+</label>
+
+<input type="text" name="country code" value="+91" size="2"/>
+<input type="text" name="phone" size="10"/> <br> <br>
+
+Email-id:
+<br>
+
+<input type="email" id="email" name="email"><br>
+<br> 
+<br>
+Address:
+    <br>
+
+<textarea cols="80" rows="5" value="address">
+</textarea>
+<br> <br>
+
+Password:
+<input type="Password" id="pass" name="pass"> 
+<br>
+ <br>
+ Re-type Password:
+<input type="Password" id="repass" name="repass"> <br> <br>
+
+
+<form action="upload.php" method="post"  enctype="mulyiple/form-data">
+    <input type="file" name="pdfFile" accept=".pdf">
+    <br>
+    <input type="submit" value="Upload PDF">
+
+<p>
+    <input type="submit" value="SEND" name="Submit" />
+    <input type="reset" value="RESET" name="Reset" /> 
+</p>
+<br>
+    <br>        
+</form>
+</body>
+</html>

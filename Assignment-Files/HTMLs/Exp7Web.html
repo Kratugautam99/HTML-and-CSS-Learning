@@ -1,0 +1,114 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        /* You can add some CSS styles here to decorate your calculator */
+        h1 {
+            color: purple;
+            text-align: center;
+        }
+        #calculator {
+            width: 300px;
+            height: 400px;
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        #display {
+            width: 280px;
+            height: 60px;
+            margin: 10px;
+            border: 1px solid black;
+            font-size: 24px;
+            text-align: right;
+        }
+        .button {
+            width: 60px;
+            height: 50px;
+            margin: 5px;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .operator {
+            background-color: orange;
+            color: white;
+        }
+        .number {
+            background-color: white;
+            color: black;
+        }
+        .clear {
+            background-color: red;
+            color: white;
+        }
+        .equal {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div id="calculator">
+        <input type="text" id="display" value="0" readonly>
+        <button class="button operator" onclick="append('+')">+</button>
+        <button class="button operator" onclick="append('-')">-</button>
+        <button class="button operator" onclick="append('*')">*</button>
+        <button class="button operator" onclick="append('/')">/</button>
+        <button class="button number" onclick="append('7')">7</button>
+        <button class="button number" onclick="append('8')">8</button>
+        <button class="button number" onclick="append('9')">9</button>
+        <button class="button clear" onclick="clear()">C</button>
+        <button class="button number" onclick="append('4')">4</button>
+        <button class="button number" onclick="append('5')">5</button>
+        <button class="button number" onclick="append('6')">6</button>
+        <button class="button operator" onclick="append('(')">(</button>
+        <button class="button number" onclick="append('1')">1</button>
+        <button class="button number" onclick="append('2')">2</button>
+        <button class="button number" onclick="append('3')">3</button>
+        <button class="button operator" onclick="append(')')">)</button>
+        <button class="button number" onclick="append('0')">0</button>
+        <button class="button number" onclick="append('.')">.</button>
+        <button class="button equal" onclick="calculate()">=</button>
+        <button class="button operator" onclick="backspace()">←</button>
+    </div>
+    <script>
+        // You can add some JavaScript code here to make your calculator work
+        var display = document.getElementById("display"); // Get the display element
+        var expression = ""; // Initialize an empty expression
+
+        // This function appends a character to the expression and updates the display
+        function append(char) {
+            expression += char; // Concatenate the character to the expression
+            display.value = expression; // Update the display value
+        }
+
+        // This function clears the expression and the display
+        function clear() {
+            expression = ""; // Reset the expression to empty
+            display.value = "0"; // Reset the display value to zero
+        }
+
+        // This function evaluates the expression and shows the result on the display
+        function calculate() {
+            try {
+                var result = eval(expression); // Evaluate the expression using the built-in eval function
+                display.value = result; // Update the display value with the result
+                expression = result; // Update the expression with the result
+            } catch (error) {
+                display.value = "Error"; // If there is an error, show "Error" on the display
+                expression = ""; // Reset the expression to empty
+            }
+        }
+
+        // This function removes the last character from the expression and updates the display
+        function backspace() {
+            expression = expression.slice(0, -1); // Remove the last character from the expression
+            display.value = expression || "0"; // Update the display value with the expression or zero if empty
+        }
+    </script>
+</body>
+</html>
