@@ -149,23 +149,23 @@ Virtual Machine - based website projects exploring design thinking and prototypi
 
 | VM-ZIndexPage | VM-ZMainIntro1 |
 |:-------------:|:---------------:|
-| <img src="Demonstration/VM-ZIndexPage.png" style="width:500px; height:250px;"/> | <img src="Demonstration/VM-ZMainIntro1.png" style="width:500px; height:250px;"/> |
+| <img src="Demonstration/VM-ZIndexPage.png" style="width:500px;"/> | <img src="Demonstration/VM-ZMainIntro1.png" style="width:500px;"/> |
 
 | VM-ZMainIntro2 | VM-ZMainVM1 |
 |:--------------:|:-----------:|
-| <img src="Demonstration/VM-ZMainIntro2.png" style="width:500px; height:250px;"/> | <img src="Demonstration/VM-ZMainVM1.png" style="width:500px; height:250px;"/> |
+| <img src="Demonstration/VM-ZMainIntro2.png" style="width:500px;"/> | <img src="Demonstration/VM-ZMainVM1.png" style="width:500px;"/> |
 
 | VM-ZMainVM2 | VM-ZMainXAds1 |
 |:-----------:|:-------------:|
-| <img src="Demonstration/VM-ZMainVM2.png" style="width:500px; height:250px;"/> | <img src="Demonstration/VM-ZMainXAds1.png" style="width:500px; height:250px;"/> |
+| <img src="Demonstration/VM-ZMainVM2.png" style="width:500px;"/> | <img src="Demonstration/VM-ZMainXAds1.png" style="width:500px;"/> |
 
 | VM-ZRedirectAbout | VM-ZRedirectContactUs |
 |:-----------------:|:---------------------:|
-| <img src="Demonstration/VM-ZRedirectAbout.png" style="width:500px; height:250px;"/> | <img src="Demonstration/VM-ZRedirectContactUs.png" style="width:500px; height:250px;"/> |
+| <img src="Demonstration/VM-ZRedirectAbout.png" style="width:500px;"/> | <img src="Demonstration/VM-ZRedirectContactUs.png" style="width:500px;"/> |
 
 | VM-ZRedirectHome | VM-ZRedirectISODownloadPage |
 |:----------------:|:---------------------------:|
-| <img src="Demonstration/VM-ZRedirectHome.png" style="width:500px; height:250px;"/> | <img src="Demonstration/VM-ZRedirectISODownloadPage.png" style="width:500px; height:250px;"/> |
+| <img src="Demonstration/VM-ZRedirectHome.png" style="width:500px;"/> | <img src="Demonstration/VM-ZRedirectISODownloadPage.png" style="width:500px;"/> |
 
 
 
