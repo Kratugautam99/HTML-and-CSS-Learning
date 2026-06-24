@@ -17,6 +17,7 @@ It contains tutorials, demonstrations, and atomic projects that showcase practic
 
 - [ℹ️ About This Repository](#about-this-repository)
 - [📁 Directory Structure](#-directory-structure)
+- [🎽 Assignment Outputs](#-assignment-outputs)
 - [🖼️ Featured Projects](#️-featured-projects)
   - [M365 Clone](#m365-clone)
   - [X.com (Twitter) Clone](#xcom-twitter-clone)
@@ -103,9 +104,39 @@ HTML-and-CSS-Learning/
 │   ├── setup.md
 │   └── tailwind.config.js
 │
+├── Assignment Files/
+│   ├── PDFs/
+│   └── HTMLs/
+|
 ├── .gitignore
+|
 └── README.md (This File)
 ```
+
+---
+
+## 🎽 Assignment Outputs
+
+Academic Practical Assignment Works of creating various HTML and CSS Pages :-
+
+| Exp1Output | Exp2Output | Exp3Output |
+|:----------:|:----------:|:----------:|
+| <img src="Demonstration/Exp1Output.jpeg" width="300"/> | <img src="Demonstration/Exp2Output.jpeg" width="300"/> | <img src="Demonstration/Exp3Output.jpeg" width="300"/> |
+
+| Exp4Output | Exp5Output | Exp6Output |
+|:----------:|:----------:|:----------:|
+| <img src="Demonstration/Exp4Output.jpeg" width="300"/> | <img src="Demonstration/Exp5Output.jpeg" width="300"/> | <img src="Demonstration/Exp6Output.jpeg" width="300"/> |
+
+| Exp7Output | Exp8Output | 
+|:----------:|:----------:|
+| <img src="Demonstration/Exp7Output.jpeg" width="500"/> | <img src="Demonstration/Exp8Output.jpeg" width="500"/> | 
+
+
+---
+
+✨ This way, each row has two experiment images side by side, aligned neatly with equal width.  
+
+Would you like me to **force equal height** as well (so their midpoints line up perfectly), or keep only the width constraint?
 
 ---
 
