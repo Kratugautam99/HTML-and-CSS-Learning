@@ -148,9 +148,21 @@ Would you like me to **force equal height** as well (so their midpoints line up 
 ### 🖥️ M365 Clone (Microsoft 365)
 A faithful recreation of the Microsoft 365 landing page – responsive header, hero section, cards, and footer.
 
-| Upper Section | Lower Section |
-|---------------|----------------|
-| ![M365 Upper](Demonstration/M365-UpperMainPage.png) | ![M365 Lower](Demonstration/M365-LowerMainPage.png) |
+<p align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="Demonstration/M365-UpperMainPage.png" style="width:500px;"/><br/>
+        <sub>Upper Section</sub>
+      </td>
+      <td align="center">
+        <img src="Demonstration/M365-LowerMainPage.png" style="width:500px;"/><br/>
+        <sub>Lower Section</sub>
+      </td>
+    </tr>
+  </table>
+</p>
+
 
 ---
 
@@ -158,9 +170,21 @@ A faithful recreation of the Microsoft 365 landing page – responsive header, h
 ### 🐦 X.com (Twitter) Clone
 Replicates the Twitter home feed interface – sidebar, post composer, and timeline.
 
-| Before Message | After Message |
-|----------------|---------------|
-| ![X Before](Demonstration/X.com-BeforeMessage.png) | ![X After](Demonstration/X.com-AfterMessage.png) |
+<p align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="Demonstration/X.com-BeforeMessage.png" style="width:500px;"/><br/>
+        <sub>Before Message</sub>
+      </td>
+      <td align="center">
+        <img src="Demonstration/X.com-AfterMessage.png" style="width:500px;"/><br/>
+        <sub>After Message</sub>
+      </td>
+    </tr>
+  </table>
+</p>
+
 
 ---
 
@@ -168,9 +192,21 @@ Replicates the Twitter home feed interface – sidebar, post composer, and timel
 ### 🎮 Steam Clone
 Clone of the Steam game store homepage – navigation, featured games, carousel, and sections.
 
-| Upper Section | Lower Section |
-|---------------|----------------|
-| ![Steam Upper](Demonstration/Steam-UpperMainPage.png) | ![Steam Lower](Demonstration/Steam-LowerMainPage.png) |
+<p align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="Demonstration/Steam-UpperMainPage.png" style="width:500px;"/><br/>
+        <sub>Upper Section</sub>
+      </td>
+      <td align="center">
+        <img src="Demonstration/Steam-LowerMainPage.png" style="width:500px;"/><br/>
+        <sub>Lower Section</sub>
+      </td>
+    </tr>
+  </table>
+</p>
+
 
 ---
 
@@ -178,25 +214,60 @@ Clone of the Steam game store homepage – navigation, featured games, carousel,
 ### 📠 VMSite Clone
 Virtual Machine - based website projects exploring design thinking and prototyping
 
-| VM-ZIndexPage | VM-ZMainIntro1 |
-|:-------------:|:---------------:|
-| <img src="Demonstration/VM-ZIndexPage.png" style="width:500px;"/> | <img src="Demonstration/VM-ZMainIntro1.png" style="width:500px;"/> |
-
-| VM-ZMainIntro2 | VM-ZMainVM1 |
-|:--------------:|:-----------:|
-| <img src="Demonstration/VM-ZMainIntro2.png" style="width:500px;"/> | <img src="Demonstration/VM-ZMainVM1.png" style="width:500px;"/> |
-
-| VM-ZMainVM2 | VM-ZMainXAds1 |
-|:-----------:|:-------------:|
-| <img src="Demonstration/VM-ZMainVM2.png" style="width:500px;"/> | <img src="Demonstration/VM-ZMainXAds1.png" style="width:500px;"/> |
-
-| VM-ZRedirectAbout | VM-ZRedirectContactUs |
-|:-----------------:|:---------------------:|
-| <img src="Demonstration/VM-ZRedirectAbout.png" style="width:500px;"/> | <img src="Demonstration/VM-ZRedirectContactUs.png" style="width:500px;"/> |
-
-| VM-ZRedirectHome | VM-ZRedirectISODownloadPage |
-|:----------------:|:---------------------------:|
-| <img src="Demonstration/VM-ZRedirectHome.png" style="width:500px;"/> | <img src="Demonstration/VM-ZRedirectISODownloadPage.png" style="width:500px;"/> |
+<p align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="Demonstration/VM-ZIndexPage.png" style="width:500px;"/><br/>
+        <sub>VM-ZIndexPage</sub>
+      </td>
+      <td align="center">
+        <img src="Demonstration/VM-ZMainIntro1.png" style="width:500px;"/><br/>
+        <sub>VM-ZMainIntro1</sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="Demonstration/VM-ZMainIntro2.png" style="width:500px;"/><br/>
+        <sub>VM-ZMainIntro2</sub>
+      </td>
+      <td align="center">
+        <img src="Demonstration/VM-ZMainVM1.png" style="width:500px;"/><br/>
+        <sub>VM-ZMainVM1</sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="Demonstration/VM-ZMainVM2.png" style="width:500px;"/><br/>
+        <sub>VM-ZMainVM2</sub>
+      </td>
+      <td align="center">
+        <img src="Demonstration/VM-ZMainXAds1.png" style="width:500px;"/><br/>
+        <sub>VM-ZMainXAds1</sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="Demonstration/VM-ZRedirectAbout.png" style="width:500px;"/><br/>
+        <sub>VM-ZRedirectAbout</sub>
+      </td>
+      <td align="center">
+        <img src="Demonstration/VM-ZRedirectContactUs.png" style="width:500px;"/><br/>
+        <sub>VM-ZRedirectContactUs</sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="Demonstration/VM-ZRedirectHome.png" style="width:500px;"/><br/>
+        <sub>VM-ZRedirectHome</sub>
+      </td>
+      <td align="center">
+        <img src="Demonstration/VM-ZRedirectISODownloadPage.png" style="width:500px;"/><br/>
+        <sub>VM-ZRedirectISODownloadPage</sub>
+      </td>
+    </tr>
+  </table>
+</p>
 
 
 
