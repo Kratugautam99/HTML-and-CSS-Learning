@@ -55,7 +55,8 @@ HTML-and-CSS-Learning/
 ├── Atomic-Projects/                     # Full‑page clones (real‑world UI replication)
 │   ├── M365-Clone/                      # Microsoft 365 landing page clone
 │   ├── X.com-Clone/                     # Twitter (X) home page clone
-│   └── Steam-Clone/                     # Steam store front clone
+│   ├── Steam-Clone/                     # Steam store front clone
+│   └── VMSite-Clone/                    # Virtual Machine Site Clone
 │
 ├── CSS-Tutorials/                       # 21 progressive CSS lessons (numbered)
 │   ├── 1)_CSS_Injection_Methods
