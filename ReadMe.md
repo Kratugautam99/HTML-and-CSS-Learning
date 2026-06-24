@@ -149,23 +149,24 @@ Virtual Machine - based website projects exploring design thinking and prototypi
 
 | VM-ZIndexPage | VM-ZMainIntro1 |
 |:-------------:|:---------------:|
-| <img src="Demonstration/VM-ZIndexPage.png" width="500"/> | <img src="Demonstration/VM-ZMainIntro1.png" width="500"/> |
+| <img src="Demonstration/VM-ZIndexPage.png" style="width:500px; height:300px; object-fit:contain;"/> | <img src="Demonstration/VM-ZMainIntro1.png" style="width:500px; height:300px; object-fit:contain;"/> |
 
 | VM-ZMainIntro2 | VM-ZMainVM1 |
 |:--------------:|:-----------:|
-| <img src="Demonstration/VM-ZMainIntro2.png" width="500"/> | <img src="Demonstration/VM-ZMainVM1.png" width="500"/> |
+| <img src="Demonstration/VM-ZMainIntro2.png" style="width:500px; height:300px; object-fit:contain;"/> | <img src="Demonstration/VM-ZMainVM1.png" style="width:500px; height:300px; object-fit:contain;"/> |
 
 | VM-ZMainVM2 | VM-ZMainXAds1 |
 |:-----------:|:-------------:|
-| <img src="Demonstration/VM-ZMainVM2.png" width="500"/> | <img src="Demonstration/VM-ZMainXAds1.png" width="500"/> |
+| <img src="Demonstration/VM-ZMainVM2.png" style="width:500px; height:300px; object-fit:contain;"/> | <img src="Demonstration/VM-ZMainXAds1.png" style="width:500px; height:300px; object-fit:contain;"/> |
 
 | VM-ZRedirectAbout | VM-ZRedirectContactUs |
 |:-----------------:|:---------------------:|
-| <img src="Demonstration/VM-ZRedirectAbout.png" width="500"/> | <img src="Demonstration/VM-ZRedirectContactUs.png" width="500"/> |
+| <img src="Demonstration/VM-ZRedirectAbout.png" style="width:500px; height:300px; object-fit:contain;"/> | <img src="Demonstration/VM-ZRedirectContactUs.png" style="width:500px; height:300px; object-fit:contain;"/> |
 
 | VM-ZRedirectHome | VM-ZRedirectISODownloadPage |
 |:----------------:|:---------------------------:|
-| <img src="Demonstration/VM-ZRedirectHome.png" width="500"/> | <img src="Demonstration/VM-ZRedirectISODownloadPage.png" width="500"/> |
+| <img src="Demonstration/VM-ZRedirectHome.png" style="width:500px; height:300px; object-fit:contain;"/> | <img src="Demonstration/VM-ZRedirectISODownloadPage.png" style="width:500px; height:300px; object-fit:contain;"/> |
+
 
 
 ---
