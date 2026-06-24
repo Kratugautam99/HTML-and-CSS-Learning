@@ -119,24 +119,53 @@ HTML-and-CSS-Learning/
 
 Academic Practical Assignment Works of creating various HTML and CSS Pages :-
 
-| Exp1Output | Exp2Output | Exp3Output |
-|:----------:|:----------:|:----------:|
-| <img src="Demonstration/Exp1Output.jpeg" width="300"/> | <img src="Demonstration/Exp2Output.jpeg" width="300"/> | <img src="Demonstration/Exp3Output.jpeg" width="300"/> |
+<p align="center">
+  <table style="margin:0 auto; width:100%; max-width:1100px; border-collapse:collapse; text-align:center;">
+    <tr>
+      <td style="width:33.33%; padding:8px; vertical-align:top;">
+        <img src="Demonstration/Exp1Output.jpeg" alt="Exp1Output" style="max-width:300px; width:100%;"/><br/>
+        <sub>        Exp1Output</sub>
+      </td>
+      <td style="width:33.33%; padding:8px; vertical-align:top;">
+        <img src="Demonstration/Exp2Output.jpeg" alt="Exp2Output" style="max-width:300px; width:100%;"/><br/>
+        <sub>        Exp2Output</sub>
+      </td>
+      <td style="width:33.33%; padding:8px; vertical-align:top;">
+        <img src="Demonstration/Exp3Output.jpeg" alt="Exp3Output" style="max-width:300px; width:100%;"/><br/>
+        <sub>        Exp3Output</sub>
+      </td>
+    </tr>
+    <tr style="height:260px;">
+      <td style="width:33.33%; padding:8px; vertical-align:top;">
+        <img src="Demonstration/Exp4Output.jpeg" alt="Exp4Output" style="max-width:300px; width:100%;"/><br/>
+        <sub>        Exp4Output</sub>
+      </td>
+      <!-- Exp5 spans two rows vertically -->
+      <td rowspan="2" style="width:33.33%; padding:0; vertical-align:middle;">
+        <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; padding:8px; box-sizing:border-box;">
+          <img src="Demonstration/Exp5Output.jpeg" alt="Exp5Output" style="width:100%; height:100%; object-fit:cover; display:block;"/>
+        </div>
+        <br/>
+        <sub>        Exp5Output</sub>
+      </td>
+      <td style="width:33.33%; padding:8px; vertical-align:top;">
+        <img src="Demonstration/Exp6Output.jpeg" alt="Exp6Output" style="max-width:300px; width:100%;"/><br/>
+        <sub>        Exp6Output</sub>
+      </td>
+    </tr>
+    <tr style="height:260px;">
+      <td style="width:33.33%; padding:8px; vertical-align:top;">
+        <img src="Demonstration/Exp7Output.jpeg" alt="Exp7Output" style="width:100%; height:auto;"/><br/>
+        <sub>        Exp7Output</sub>
+      </td>
+      <td style="width:33.33%; padding:8px; vertical-align:top;">
+        <img src="Demonstration/Exp8Output.jpeg" alt="Exp8Output" style="width:100%; height:auto;"/><br/>
+        <sub>        Exp8Output</sub>
+      </td>
+    </tr>
+  </table>
+</p>
 
-| Exp4Output | Exp5Output | Exp6Output |
-|:----------:|:----------:|:----------:|
-| <img src="Demonstration/Exp4Output.jpeg" width="300"/> | <img src="Demonstration/Exp5Output.jpeg" width="300"/> | <img src="Demonstration/Exp6Output.jpeg" width="300"/> |
-
-| Exp7Output | Exp8Output | 
-|:----------:|:----------:|
-| <img src="Demonstration/Exp7Output.jpeg" width="500"/> | <img src="Demonstration/Exp8Output.jpeg" width="500"/> | 
-
-
----
-
-✨ This way, each row has two experiment images side by side, aligned neatly with equal width.  
-
-Would you like me to **force equal height** as well (so their midpoints line up perfectly), or keep only the width constraint?
 
 ---
 
