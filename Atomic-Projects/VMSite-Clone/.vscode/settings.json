@@ -1,0 +1,4 @@
+{
+    "CodeGPT.Autocomplete.provider": "Ollama - llama3:70b-instruct",
+    "python.REPL.enableREPLSmartSend": false
+}

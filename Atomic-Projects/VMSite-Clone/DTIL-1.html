@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTIL Assignment</title>
+    <link rel="icon" type="image" href="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/216_Microsoft-1024.png">
+    <style>
+        /* Header styles */
+
+        body{
+            background-color: rgb(175, 194, 233);
+        }
+        .header {
+            background-color: rgb(24, 23, 23); /* Light grey background */
+            padding: 10px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #f0eeee; /* Dark grey text */
+        }
+        .header-right a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #f5eded; /* Dark grey text */
+        }
+
+        /* Dropdown menu styles */
+        .dropdown {
+            margin: 25px;
+
+        }
+        select {
+            padding: 12px;
+            font-size: 22px;
+            color: white;
+            background-color: rgb(15, 15, 15);
+        }
+
+        /* Introduction section styles */
+        .intro-section {
+            display: none; /* Hide by default */
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(5, 5, 5);
+            color:#ccc;
+        }
+        .intro-img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc; /* Add a subtle border */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+        }
+
+        /* Virtual Machine section styles */
+        .vm-section {
+            display: none; /* Hide by default */
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(175, 194, 233);
+        }
+        .download-link {
+            display: block;
+            margin: 10px auto;
+            background-color: #3366cc; /* Blue background */
+            color: #ffffff; /* White text */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: solid 4px;
+            border-color: rgb(20, 20, 19);
+        }
+
+        /* Ads section styles */
+        .ads-section {
+            display: none; /* Hide by default */
+            padding: 20px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        .ads-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo"><h2>WINDOWS VIRTUAL MACHINE SUPPORT</h2></a>
+        <div class="header-right">
+            <a href="https://www.microsoft.com/en-in/?msockid=2255f6562c6b650d0ae7e2452df06467">Home</a>
+            <a href="https://support.microsoft.com/en-in/contactus/">Contact</a>
+            <a href="https://en.wikipedia.org/wiki/Microsoft">About</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <label for="menu1"><h2><b>Select an option:</b></h2></label>
+        <select id="menu1" onchange="showSection()">
+            <option value="intro"><b>Introduction</b></option>
+            <option value="vm"><b>Virtual Machine</b></option>
+            <option value="ads"><b>Ads</b></option>
+        </select>
+    </div>
+    <div class="intro-section" id="intro">
+        <img src="https://th.bing.com/th/id/OIP.lHea-ER-bTk50S9A0pZ2IgHaEI?rs=1&pid=ImgDetMain" alt="Introduction" class="intro-img">
+        <p><b><h3><ol>1. Origins and Early Days: In the early 1980s, Microsoft embarked on a project known as “Interface Manager”. This endeavor, led by Bill Gates, eventually emerged as “Windows”. In November 1985, Windows 1.0 made its debut, serving as a graphical user interface (GUI) layer atop the dominant MS-DOS operating system. Its purpose? To make computing more accessible and visually appealing.</ol>
+
+            <ol>2. Windows 1.0 to 3.11: These early versions of Windows were essentially shells that adorned the MS-DOS core. However, a pivotal moment arrived with Windows 95. This release, while still reliant on MS-DOS, was a full-fledged operating system. It introduced the iconic Start menu, the taskbar, and Windows Explorer (later renamed File Explorer).</ol>
+            
+            <ol>3. Windows NT and the 32-bit Transition: Simultaneously, Microsoft was developing Windows NT (short for “New Technology”). Windows NT 3.1 (1993) brought the robust NTFS file system, designed to replace the aging FAT system. By Windows NT 4.0, a fully 32-bit version of Windows Explorer was in place.</ol>
+            
+            <ol>4. Windows 98, Me, and the Consumer Focus: Windows 98 (1998) ushered in USB support, plug and play functionality, and Internet Explorer 4. Windows Me (2000) targeted consumers with features like System Restore and the Help and Support Center.</ol>
+            
+            <ol>5. Windows XP and Beyond: The turn of the millennium witnessed the arrival of Windows XP (2001). With its elegant Luna visual style, improved user experience, and updated media players, XP became a beloved staple. Subsequent versions—Windows Vista, Windows 7, Windows 8, and Windows 10—continued to evolve, enhancing security, features, and aesthetics.</ol>
+            
+            <ol>6. Recent Developments: Windows 10, launched in 2015, aimed for a unified experience across devices. And in 2021, Windows 11 emerged, boasting a redesigned Start menu and centered taskbar.</ol>
+            
+            <ol>7. The Future: Microsoft’s commitment to innovation persists. Windows now integrates cloud services, prioritizes security, and seeks seamless cross-device interactions.</ol></h3></b></p>
+    </div>
+    <div class="vm-section" id="vm">
+        <p><h1><b>Windows XP</b></h1></p>
+        <a href="https://tech-latest.com/download-windows-xp-iso/" class="download-link">Download VM 1</a>
+        <p><h1><b>Windows Vista</b></h1></p>
+        <a href="https://www.heidoc.net/joomla/technology-science/microsoft/57-windows-vista-direct-download-links" class="download-link">Download VM 2</a>
+        <p><h1><b>Windows 7</b></h1></p>
+        <a href="https://www.techworm.net/2022/01/download-windows-7-iso-ultimate-professional-edition.html" class="download-link">Download VM 3</a>
+        <p><h1><b>Windows 8</b></h1></p>
+        <a href="https://www.techworm.net/2023/03/download-windows-8-1-iso-files.html" class="download-link">Download VM 4</a>
+        <p><h1><b>Windows 8.1</b></h1></p>
+        <a href="https://www.techworm.net/2023/03/download-windows-8-1-iso-files.html" class="download-link">Download VM 5</a>
+        <p><h1><b>Windows 10</b></h1></p>
+        <a href="https://www.microsoft.com/en-in/software-download/windows10?msockid=2255f6562c6b650d0ae7e2452df06467" class="download-link">Download VM 6</a>
+        <p><h1><b>Windows 11</b></h1></p>
+        <a href="https://www.microsoft.com/en-in/software-download/windows11?msockid=2255f6562c6b650d0ae7e2452df06467" class="download-link">Download VM 7</a>
+        <!-- Add more download links as needed -->
+    </div>
+    <div class="ads-section" id="ads">
+        <img src="https://th.bing.com/th/id/OIP.OF51UYzDGfeOTRKDUACyWwHaEc?w=260&h=180&c=7&r=0&o=5&cb=10&pid=1.7" alt="Ads" class="ads-img">
+        <p><b>Above you can display an ad to generate revenue. Also the provided Operating Systems displays Ads for additional income. </b></p>  
+    </div>
+
+    <script>
+        // Set default view to "Hello Tester"
+        document.getElementById("intro").style.display = "block";
+
+        function showSection() {
+            const selectedOption = document.getElementById("menu1").value;
+            document.querySelectorAll(".intro-section, .vm-section, .ads-section").forEach(section => {
+                section.style.display = "none";
+            });
+            document.getElementById(selectedOption).style.display = "block";
+        }
+    </script>
+</body>
+</html>
