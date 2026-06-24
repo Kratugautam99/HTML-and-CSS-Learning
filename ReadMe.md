@@ -21,6 +21,7 @@ It contains tutorials, demonstrations, and atomic projects that showcase practic
   - [M365 Clone](#m365-clone)
   - [X.com (Twitter) Clone](#xcom-twitter-clone)
   - [Steam Clone](#steam-clone)
+  - [VMSite Clone](#vmsite-clone)
 - [🛠️ Technologies & Tools](#️-technologies--tools)
 - [🚀 How to Set Up](#-how-to-set-up)
   - [HTML & CSS Basics](#html--css-basics)
@@ -112,6 +113,7 @@ HTML-and-CSS-Learning/
 
 > Below are screenshots of the three complete clones built using only HTML and CSS (plus Tailwind where noted). Each clone mimics a well‑known website to demonstrate real‑world layout and styling skills.
 
+<a id="m365-clone"></a>
 ### 🖥️ M365 Clone (Microsoft 365)
 A faithful recreation of the Microsoft 365 landing page – responsive header, hero section, cards, and footer.
 
@@ -121,6 +123,7 @@ A faithful recreation of the Microsoft 365 landing page – responsive header, h
 
 ---
 
+<a id="xcom-twitter-clone"></a>
 ### 🐦 X.com (Twitter) Clone
 Replicates the Twitter home feed interface – sidebar, post composer, and timeline.
 
@@ -130,12 +133,40 @@ Replicates the Twitter home feed interface – sidebar, post composer, and timel
 
 ---
 
+<a id="steam-clone"></a>
 ### 🎮 Steam Clone
 Clone of the Steam game store homepage – navigation, featured games, carousel, and sections.
 
 | Upper Section | Lower Section |
 |---------------|----------------|
 | ![Steam Upper](Demonstration/Steam-UpperMainPage.png) | ![Steam Lower](Demonstration/Steam-LowerMainPage.png) |
+
+---
+
+<a id="vmsite-clone"></a>
+### 📠 VMSite Clone
+Virtual Machine - based website projects exploring design thinking and prototyping
+
+| VM-ZIndexPage | VM-ZMainIntro1 |
+|:-------------:|:---------------:|
+| <img src="Demonstration/VM-ZIndexPage.png" width="500"/> | <img src="Demonstration/VM-ZMainIntro1.png" width="500"/> |
+
+| VM-ZMainIntro2 | VM-ZMainVM1 |
+|:--------------:|:-----------:|
+| <img src="Demonstration/VM-ZMainIntro2.png" width="500"/> | <img src="Demonstration/VM-ZMainVM1.png" width="500"/> |
+
+| VM-ZMainVM2 | VM-ZMainXAds1 |
+|:-----------:|:-------------:|
+| <img src="Demonstration/VM-ZMainVM2.png" width="500"/> | <img src="Demonstration/VM-ZMainXAds1.png" width="500"/> |
+
+| VM-ZRedirectAbout | VM-ZRedirectContactUs |
+|:-----------------:|:---------------------:|
+| <img src="Demonstration/VM-ZRedirectAbout.png" width="500"/> | <img src="Demonstration/VM-ZRedirectContactUs.png" width="500"/> |
+
+| VM-ZRedirectHome | VM-ZRedirectISODownloadPage |
+|:----------------:|:---------------------------:|
+| <img src="Demonstration/VM-ZRedirectHome.png" width="500"/> | <img src="Demonstration/VM-ZRedirectISODownloadPage.png" width="500"/> |
+
 
 ---
 
