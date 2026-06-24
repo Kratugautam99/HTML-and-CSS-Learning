@@ -361,7 +361,7 @@ Virtual Machine - based website projects exploring design thinking and prototypi
 | **Markup**        | HTML5 (semantic tags, forms, media, iframes)                              |
 | **Styling**       | CSS3 (Flexbox, Grid, animations, transitions, transforms, filters, variables, media queries) |
 | **Utility CSS**   | Tailwind CSS (with custom config and build process)                       |
-| **Tools**         | VS Code, Live Server, npm, PostCSS, Autoprefixer                          |
+| **Tools**         | VS Code, Live Server, NPM, PostCSS, Autoprefixer                          |
 
 ---
 
